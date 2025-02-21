@@ -15,31 +15,42 @@
         android:background="@drawable/fondo"
         android:weightSum="1">
 
+        <!-- Campo de texto para ingresar el valor -->
         <TextView
             android:id="@+id/Conversor"
-            android:layout_width="393dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
+            android:layout_gravity="center_vertical"
             android:layout_marginBottom="20dp"
             android:text="CONVERSOR DE UNIDADES"
-            android:textColor="@color/black"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+            android:textColor="#00796B"
             android:textSize="24dp"
             android:visibility="visible"
             tools:visibility="visible" />
 
-        <!-- Campo de texto para ingresar el valor -->
         <Spinner
             android:id="@+id/spinnerConversion"
-            android:layout_width="380dp"
-            android:layout_height="66dp">
+            android:layout_width="387dp"
+            android:layout_height="63dp">
 
         </Spinner>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="211dp"
+            android:layout_height="221dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/placeholder_image">
+
+        </ImageView>
 
         <EditText
             android:id="@+id/editTextInput"
             style="@style/Widget.Material3.AutoCompleteTextView.OutlinedBox.Dense"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="381dp"
+            android:layout_height="61dp"
             android:layout_marginBottom="16dp"
             android:hint="INGRESA VALOR"
             android:inputType="numberDecimal"
@@ -54,10 +65,10 @@
         <!-- TextView para mostrar el resultado -->
         <TextView
             android:id="@+id/textViewResult"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="379dp"
+            android:layout_height="48dp"
             android:layout_marginTop="20dp"
-            android:text="Resultado"
+            android:text="Resultado de la conversión"
             android:textColor="@color/black"
             android:textSize="18sp" />
     </LinearLayout>
